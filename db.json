@@ -1,0 +1,95 @@
+{
+
+  "songs": [
+    {
+      "id" : 1,
+      "song_name" : "old town road",
+      "artist" : "Lil Nas X",
+      "genre" : "country",
+      "play_time" : "2",
+      "album_art_name" : "lil-nas-x",
+      "description" : "All about fun"
+      },
+      {
+        "id" : 2,
+        "song_name" : "Bad Guy",
+        "artist" : "Billie Eilish",
+        "genre" : "Pop",
+        "play_time" : "3",
+        "album_art_name" : "billie-eilish",
+        "description" : "Loving this song"
+        },
+        {
+          "id" : 3,
+          "song_name" : "Talk",
+          "artist" : "Khalid",
+          "genre" : "Rap",
+          "play_time" : "4",
+          "album_art_name" : "khalid",
+          "description" : "Lol out loud"
+          },
+          {
+            "id" : 4,
+            "song_name" : "Sucker",
+            "artist" : "Jonas Brothers",
+            "genre" : "R&B",
+            "play_time" : "3",
+            "album_art_name" : "jonas-brothers",
+            "description" : "Exciting ways"
+             },
+            {
+              "id" : 5,
+              "song_name" : "wow",
+              "artist" : "Malone",
+              "genre" : "R&B",
+              "play_time" : "2",
+              "album_art_name" : "malone",
+              "description" : "what a feeling"
+              },
+              {
+                "id" : 6,
+                "song_name" : "Sunflower",
+                "artist" : "Malone",
+                "genre" : "R&B",
+                "play_time" : "4",
+                "album_art_name" : "malone",
+                "description" : "Sun shining day"
+                },
+                {
+                  "id" : 7,
+                  "song_name" : "Suge",
+                  "artist" : "Dababy",
+                  "genre" : "Rap",
+                  "play_time" : "5",
+                  "album_art_name" : "dababy",
+                  "description" : "High Voltage"
+                  },
+                  {
+                    "id" : 8,
+                    "song_name" : "7 Rings",
+                    "artist" : "Ariana Grande",
+                    "genre" : "Pop",
+                    "play_time" : "3",
+                    "album_art_name" : "ariana-grande",
+                    "description" : "Something kool to feel"
+                    },
+                    {
+                      "id" : 9,
+                      "song_name" : "Press",
+                      "artist" : "Cardi-B",
+                      "genre" : "Rap",
+                      "play_time" : "4",
+                      "album_art_name" : "cardi-b",
+                      "description" : "Hard core lyrics"
+                      },
+                      {
+                        "id" : 10,
+                        "song_name" : "Never Really Over",
+                        "artist" : "Kate Perry",
+                        "genre" : "R&B",
+                        "play_time" : "5",
+                        "album_art_name" : "kate-perry",
+                        "description" : "Guess who did it"
+                      }
+  ]
+}

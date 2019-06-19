@@ -5,9 +5,108 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#navBar-container{
+  display: flex;
+  flex-flow: row unwrap;
+  justify-content:flex-start;
+  align-content: center;
+}
+
+ul{
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #595959;
+}
+
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  color: white;
+}
+
+li a:hover{
+  background-color: #808080;
+  color: white;
+  border-bottom: 5px solid #1a1a1a;
+}
+
+.myForm{
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-right: 30px;
+  background-color: #595959;
+  color: white;
+}
+
+.sBar{
+  display: inline;
+  float: right;
+  border:none;
+  border-bottom: 1px solid white;
+  margin-right: 30px;
+  box-sizing:border-box;
+}
+
+/* nav{
+  background-color: #8c8c8c;
+  float: left;
+  width: 100%;
+}
+
+ul{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #333;
+}
+
+.clear{
+  clear: both;
+} */
+
+.myCardGroup{
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+  align-content:center;
+  align-item:flex-start;
 }
