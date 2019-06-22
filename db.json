@@ -8,7 +8,8 @@
       "genre" : "country",
       "play_time" : "2",
       "album_art_name" : "lil-nas-x",
-      "description" : "All about fun"
+      "description" : "All about fun",
+      "likes" : "10"
       },
       {
         "id" : 2,
@@ -17,7 +18,8 @@
         "genre" : "Pop",
         "play_time" : "3",
         "album_art_name" : "billie-eilish",
-        "description" : "Loving this song"
+        "description" : "Loving this song",
+        "likes" : "2"
         },
         {
           "id" : 3,
@@ -26,7 +28,8 @@
           "genre" : "Rap",
           "play_time" : "4",
           "album_art_name" : "khalid",
-          "description" : "Lol out loud"
+          "description" : "Lol out loud",
+          "likes" : "60"
           },
           {
             "id" : 4,
@@ -35,7 +38,8 @@
             "genre" : "R&B",
             "play_time" : "3",
             "album_art_name" : "jonas-brothers",
-            "description" : "Exciting ways"
+            "description" : "Exciting ways",
+            "likes" : "12"
              },
             {
               "id" : 5,
@@ -44,7 +48,8 @@
               "genre" : "R&B",
               "play_time" : "2",
               "album_art_name" : "malone",
-              "description" : "what a feeling"
+              "description" : "what a feeling",
+              "likes" : "80"
               },
               {
                 "id" : 6,
@@ -53,7 +58,8 @@
                 "genre" : "R&B",
                 "play_time" : "4",
                 "album_art_name" : "malone",
-                "description" : "Sun shining day"
+                "description" : "Sun shining day",
+                "likes" : "100"
                 },
                 {
                   "id" : 7,
@@ -62,7 +68,8 @@
                   "genre" : "Rap",
                   "play_time" : "5",
                   "album_art_name" : "dababy",
-                  "description" : "High Voltage"
+                  "description" : "High Voltage",
+                  "likes" : "7"
                   },
                   {
                     "id" : 8,
@@ -71,7 +78,8 @@
                     "genre" : "Pop",
                     "play_time" : "3",
                     "album_art_name" : "ariana-grande",
-                    "description" : "Something kool to feel"
+                    "description" : "Something kool to feel",
+                    "likes" : "11"
                     },
                     {
                       "id" : 9,
@@ -80,7 +88,8 @@
                       "genre" : "Rap",
                       "play_time" : "4",
                       "album_art_name" : "cardi-b",
-                      "description" : "Hard core lyrics"
+                      "description" : "Hard core lyrics",
+                      "likes" : "8"
                       },
                       {
                         "id" : 10,
@@ -89,7 +98,8 @@
                         "genre" : "R&B",
                         "play_time" : "5",
                         "album_art_name" : "kate-perry",
-                        "description" : "Guess who did it"
+                        "description" : "Guess who did it",
+                        "likes" : "4"
                       }
   ]
 }

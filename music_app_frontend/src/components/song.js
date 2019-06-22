@@ -3,9 +3,8 @@ import Card from 'react-bootstrap/Card'
 
 
 function Song(props){
-
   let myEditedName= () => {
-    return props.songObj.artist.split(" ").join("-").toLowerCase()
+    return props.songObj.artist !== null? props.songObj.artist.split(" ").join("-").toLowerCase() : null
   }
 
   return(
@@ -22,7 +21,7 @@ function Song(props){
           marginLeft: '30px',
           boxShadow: '10px 10px 8px #888888'
         }}
-        onDoubleClick={(_) => props.handleUserSelect(props.songObj)}
+        onDoubleClick={props.handleUserSelect? (_) => props.handleUserSelect(props.songObj, props.playlistId) : null}
         >
         <Card.Header>--Song Detail--</Card.Header>
         <Card.Img variant="top"

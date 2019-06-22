@@ -27,13 +27,25 @@ class App extends React.Component{
     }
   }
 
-  componentDidMount = () =>{
+  componentDidMount = () => {
+    //fetch all the songs from server
     fetch("http://localhost:3001/songs")
     .then(resp => resp.json())
     .then(musicData => {
         this.setState({
           musicArr: musicData
         })
+    })
+
+    //fetch all the user playlists
+    fetch("http://localhost:3001/playlists")
+    .then(resp => resp.json())
+    .then(musicData => {
+        const{id, songs}= musicData[0]
+        let newSongArr= [id, songs]
+        this.setState({
+          userPlaylist: newSongArr
+        }, () => console.log(this.state.userPlaylist))
     })
   }
 
@@ -45,18 +57,44 @@ class App extends React.Component{
     })
   }
 
-  handleUserSelect= (songObj) => {
-    let songs = [...this.state.userPlaylist]
-    if(!songs.includes(songObj)){
+  handleUserSelect= (songObj, playlistId) => {
+    let songs = [...this.state.userPlaylist[1]]
+    let foundSong= songs.find(
+      song => song.id === songObj.id)
+    if(foundSong === undefined){
       songs.push(songObj)
       this.setState({
         userPlaylist : songs
-      }, () => this.state.userPlaylist)
+      }, () => console.log(this.state.userPlaylist))
+
+      //update backend with music added to the user profile using fetch
+      fetch("http://localhost:3001/playlist_songs",{
+            method : "POST",
+            headers:{
+              "Content-Type" : "application/json",
+              "Accept" : "application/json"
+            },
+            body:JSON.stringify({
+              song_id : songObj.id,
+              playlistId: playlistId
+            })
+    })
+      .then(resp => resp.json())
+      .then(responseText => {
+        debugger
+        console.log(responseText)
+      })
+
   }else{
-      console.log("Sorry, you can't the same music more than once!!!", this.state.userPlaylist)
+      console.log("Sorry, you can't have the same music more than once!!!", this.state.userPlaylist)
   }
-  console.log(this.state.userPlaylist)
 }
+
+//
+// handleFetchUserPlaylist= () => {
+//
+// }
+
 
   render(){
     return (
