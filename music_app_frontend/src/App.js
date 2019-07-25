@@ -112,7 +112,7 @@ class App extends React.Component{
                     <Nav.Link href="/profile">Profile</Nav.Link>
                     </Nav.Item>
                     <Nav.Item as="li">
-                    <Nav.Link href="#SongDetail">Song Detail</Nav.Link>
+                    <Nav.Link href="http://google.com">Song Detail</Nav.Link>
                     </Nav.Item>
                     <Nav.Item as="li">
                     <Nav.Link href="/about">About</Nav.Link>
